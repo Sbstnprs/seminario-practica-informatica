@@ -1,0 +1,5 @@
+@echo off
+echo Compilando TechPoint...
+javac -encoding UTF-8 -cp "lib\mysql-connector-j-9.7.0.jar" -d bin src\techpoint\excepcion\ProductoExcepcion.java src\techpoint\servicio\ICotizacion.java src\techpoint\servicio\CotizacionManual.java src\techpoint\servicio\CotizacionOnline.java src\techpoint\modelo\ProductoTecnologico.java src\techpoint\modelo\Smartphone.java src\techpoint\modelo\Consola.java src\techpoint\modelo\Accesorio.java src\techpoint\modelo\Notebook.java src\techpoint\modelo\CanalVenta.java src\techpoint\modelo\GestorRentabilidad.java src\techpoint\persistencia\ConexionMySQL.java src\techpoint\persistencia\ProductoDAO.java src\techpoint\persistencia\CanalDAO.java src\techpoint\controlador\ControladorPrecios.java src\techpoint\controlador\ControladorCatalogo.java src\techpoint\controlador\ControladorRentabilidad.java src\techpoint\controlador\ControladorCanales.java src\techpoint\menu\MenuPrincipal.java src\techpoint\Main.java
+if %errorlevel%==0 (echo Compilacion exitosa.) else (echo ERROR en compilacion.)
+pause
